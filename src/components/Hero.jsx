@@ -24,11 +24,11 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-center px-4 pb-16 mt-6">
+    <section className="h-screen flex flex-col justify-center items-center text-center px-4 pb-16">
       <img
         src="https://github.com/markuptitan.png"
         alt="Samson"
-        className="w-64 h-64 rounded-full border-2 border-blue-600 mb-4 shadow-lg transition duration-500 ease-in-out  hover:shadow-[0_0_25px_5px_rgba(37,99,235,0.6)]"
+        className="w-64 h-64 rounded-full border-2 border-blue-600 mb-4 shadow-lg transition duration-500 ease-in-out  hover:shadow-[0_0_25px_8.75px_rgba(37,99,235,0.6)]"
       />
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-gray-900">
         Hi, I am Samson.
