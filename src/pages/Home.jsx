@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Hero from "../components/Hero";
 
 const Home = () => {
   useEffect(() => {
@@ -6,9 +7,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-      <p>Samson's portfolio</p>
-    </div>
+    <>
+      <Hero />
+    </>
   );
 };
 
