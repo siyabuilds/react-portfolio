@@ -23,7 +23,7 @@
   }
 
   body {
-    font-family: "Space Grotesk",
+    font-family: "Space Grotesk";
     color: var(--foreground);
     background-color: var(--background);
     transition: background-color 0.3s ease, color 0.3s ease;
