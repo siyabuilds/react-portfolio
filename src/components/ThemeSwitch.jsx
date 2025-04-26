@@ -21,13 +21,13 @@ const ThemeSwitch = () => {
       className="ml-2 p-1 rounded-full border border-primary hover:bg-hover-light dark:hover:bg-hover-dark transition-colors"
       aria-label="Toggle theme"
     >
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence mode="wait">
         <motion.div
           key={theme}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.8 }}
-          transition={{ duration: 0.25 }}
+          initial={{ rotateY: 90, opacity: 0 }}
+          animate={{ rotateY: 0, opacity: 1 }}
+          exit={{ rotateY: -90, opacity: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <Icon className="w-6 h-6 text-primary" />
         </motion.div>
