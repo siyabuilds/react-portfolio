@@ -1,5 +1,46 @@
 @import "tailwindcss";
 
-body {
-  font-family: "Space Grotesk";
+@layer base {
+  :root {
+    --foreground: #111827;
+    --background: #ffffff;
+    --primary: #3b82f6;
+    --hover-bg: #f3f4f6;
+  }
+
+  [data-theme="dark"] {
+    --foreground: #c9d1d9;
+    --background: #0d1117;
+    --primary: #3b82f6;
+    --hover-bg: #1f2937;
+  }
+
+  [data-theme="dracula"] {
+    --foreground: #f8f8f2;
+    --background: #282a36;
+    --primary: #ff79c6;
+    --hover-bg: #44475a;
+  }
+
+  body {
+    color: var(--foreground);
+    background-color: var(--background);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .text-foreground {
+    color: var(--foreground);
+  }
+
+  .bg-background {
+    background-color: var(--background);
+  }
+
+  .text-primary {
+    color: var(--primary);
+  }
+
+  .bg-primary {
+    background-color: var(--primary);
+  }
 }

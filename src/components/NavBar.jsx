@@ -18,17 +18,15 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="w-full px-4 py-4 shadow-md bg-white dark:bg-gray-900">
+    <nav className="w-full px-4 py-4 shadow-md bg-[var(--background)]">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Heading */}
-        <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
-          Samson
-        </h1>
+        <h1 className="text-3xl font-bold text-[var(--foreground)]]">Samson</h1>
 
         {/* Hamburger Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="sm:hidden text-gray-800 dark:text-white focus:outline-none"
+          className="sm:hidden text-[var(--foreground)] focus:outline-none"
         >
           {isOpen ? (
             <svg
@@ -73,8 +71,8 @@ const NavBar = () => {
                 className={({ isActive }) =>
                   `text-xl px-4 py-2 rounded-md font-medium transition-all ${
                     isActive
-                      ? "bg-blue-600 text-white shadow"
-                      : "text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800"
+                      ? "bg-[var(--primary)] shadow"
+                      : "text-[var(--foreground)] hover:bg-[var(--hover-bg)]"
                   }`
                 }
               >
@@ -90,12 +88,12 @@ const NavBar = () => {
             isOpen
               ? "transform translate-x-0 opacity-100"
               : "-translate-x-full opacity-0"
-          } sm:hidden fixed top-0 left-0 w-full h-full bg-white dark:bg-gray-900 shadow-lg transition-all duration-300 ease-in-out z-50`}
+          } sm:hidden fixed top-0 left-0 w-full h-full bg-[var(--background)] shadow-lg transition-all duration-300 ease-in-out z-50`}
         >
           <div className="flex justify-end p-4">
             <button
               onClick={() => setIsOpen(false)}
-              className="text-gray-800 dark:text-white"
+              className="text-[var(--foreground)]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,10 +118,10 @@ const NavBar = () => {
                   to={path}
                   onClick={handleLinkClick}
                   className={({ isActive }) =>
-                    `text-lg px-6 py-3 text-gray-800 dark:text-white font-medium transition-all ${
+                    `text-lg px-6 py-3 text-[var(--foreground)]  font-medium transition-all ${
                       isActive
-                        ? "bg-blue-600 text-white shadow-md rounded-md"
-                        : "hover:bg-gray-200 dark:hover:bg-gray-800"
+                        ? "bg-[var(--primary)] shadow-md rounded-md"
+                        : "hover:bg-[var(--hover-bg)]"
                     }`
                   }
                 >
