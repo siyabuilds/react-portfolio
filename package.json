@@ -9,6 +9,11 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "author": {
+    "name": "Siyabonga Samson Lukhele",
+    "email": "samsonlukhele76@gmail.com",
+    "portfolio": "markuptitan.site"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
     "framer-motion": "^12.7.4",
