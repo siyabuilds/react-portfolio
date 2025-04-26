@@ -24,7 +24,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-center px-4 pb-16 bg-[var(--background)] text-[var(--foreground)]">
+    <section className="h-screen flex flex-col justify-center items-center text-center px-4 pb-16 text-[var(--foreground)]">
       <img
         src="https://github.com/markuptitan.png"
         alt="Samson"

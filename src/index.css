@@ -44,4 +44,9 @@
   .bg-primary {
     background-color: var(--primary);
   }
+
+  html,
+  body {
+    @apply transition-colors duration-500 ease-in-out;
+  }
 }
