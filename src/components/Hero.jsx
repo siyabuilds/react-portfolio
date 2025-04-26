@@ -37,7 +37,7 @@ const Hero = () => {
         <span className="text-[var(--primary)] font-light">["</span>
         <span
           ref={typedRef}
-          className="text-[var(--primary)] text-2xl sm:text-3xl md:text-4xl font-mono"
+          className="text-[var(--primary)] text-2xl sm:text-3xl md:text-4xl"
           aria-live="polite"
         />
         <span className="text-[var(--primary)] font-light">"]</span>.
