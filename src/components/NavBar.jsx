@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
@@ -17,11 +17,23 @@ const NavBar = () => {
     }
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   return (
-    <nav className="w-full px-4 py-4 shadow-md bg-[var(--background)] fixed">
+    <nav className="w-full px-4 py-4 shadow-md bg-[var(--background)] fixed z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Heading */}
-        <h1 className="text-3xl font-bold text-[var(--foreground)]]">Samson</h1>
+        <h1 className="text-3xl font-bold text-[var(--foreground)]">Samson</h1>
 
         {/* Hamburger Button */}
         <button
@@ -90,7 +102,7 @@ const NavBar = () => {
               : "-translate-x-full opacity-0"
           } sm:hidden fixed top-0 left-0 w-full h-full bg-[var(--background)] shadow-lg transition-all duration-300 ease-in-out z-50`}
         >
-          <div className="flex justify-end p-4">
+          <div className="flex justify-end p-4 z-50">
             <button
               onClick={() => setIsOpen(false)}
               className="text-[var(--foreground)]"
@@ -111,14 +123,14 @@ const NavBar = () => {
               </svg>
             </button>
           </div>
-          <ul className="flex flex-col items-center gap-6">
+          <ul className="flex flex-col items-center gap-6 z-50">
             {navItems.map(({ label, path }) => (
               <li key={path}>
                 <NavLink
                   to={path}
                   onClick={handleLinkClick}
                   className={({ isActive }) =>
-                    `text-lg px-6 py-3 text-[var(--foreground)]  font-medium transition-all ${
+                    `text-lg px-6 py-3 text-[var(--foreground)] font-medium transition-all ${
                       isActive
                         ? "bg-[var(--primary)] shadow-md rounded-md"
                         : "hover:bg-[var(--hover-bg)]"
