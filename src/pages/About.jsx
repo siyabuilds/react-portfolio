@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaDocker, FaGithub } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDocker, FaGithub, FaLinux } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -8,7 +8,6 @@ import {
   SiJasmine,
   SiExpress,
 } from "react-icons/si";
-import { FaLinux } from "react-icons/fa";
 
 const techGroups = {
   Frontend: [
@@ -43,13 +42,15 @@ const About = () => {
   useEffect(() => {
     document.title = "About Me";
   }, []);
+
   return (
     <section
       id="about"
-      className="min-h-screen px-6 py-8  text-gray-800 flex flex-col items-center"
+      className="min-h-screen px-6 py-8 flex flex-col items-center"
     >
+      {/* Heading */}
       <motion.h2
-        className="text-4xl font-extrabold text-blue-600 mb-8"
+        className="text-4xl font-extrabold text-[var(--primary)] mb-8"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -57,23 +58,26 @@ const About = () => {
         About Me
       </motion.h2>
 
+      {/* Main paragraph */}
       <motion.p
-        className="max-w-3xl text-center text-lg leading-relaxed mb-6"
+        className="max-w-3xl text-center text-lg leading-relaxed mb-6 text-[var(--foreground)]"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
         I’m <span className="font-semibold">Samson Siyabonga Lukhele</span>,
-        also known as <span className="italic text-blue-600">MarkupTitan</span>.
-        I'm an aspiring full-stack web developer passionate about solving
-        problems through clean, efficient, and scalable solutions. I specialize
-        in JavaScript technologies, from React and Next.js on the front-end, to
+        also known as{" "}
+        <span className="italic text-[var(--primary)]">MarkupTitan</span>. I'm
+        an aspiring full-stack web developer passionate about solving problems
+        through clean, efficient, and scalable solutions. I specialize in
+        JavaScript technologies, from React and Next.js on the front-end, to
         Node.js and Express on the back. Always learning, always building —
         driven by curiosity.
       </motion.p>
 
+      {/* Random quote */}
       <motion.p
-        className="text-md text-gray-600 italic text-center max-w-xl mb-12"
+        className="text-md italic text-center max-w-xl mb-12 text-[var(--primary)]"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.6 }}
@@ -81,24 +85,27 @@ const About = () => {
         “{randomQuote}”
       </motion.p>
 
+      {/* Technology cards */}
       <div className="w-full max-w-6xl grid md:grid-cols-2 gap-10">
         {Object.entries(techGroups).map(([group, items], index) => (
           <motion.div
             key={group}
-            className="bg-white shadow-lg hover:shadow-2xl transition-all duration-300 rounded-xl p-6 text-center hover:scale-105"
+            className="bg-[var(--background)] border border-[var(--primary)] rounded-xl p-6 text-center  hover:scale-105 transition-all duration-300 hover:shadow-[0_0_12px_3px_var(--primary)]"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 * index, duration: 0.6 }}
           >
-            <h3 className="text-2xl font-bold text-blue-600 mb-4">{group}</h3>
-            <div className="flex justify-center flex-wrap gap-6 text-4xl text-blue-600">
+            <h3 className="text-2xl font-bold text-[var(--primary)] mb-4">
+              {group}
+            </h3>
+            <div className="flex justify-center flex-wrap gap-6 text-4xl text-[var(--primary)]">
               {items.map(({ icon, name }) => (
                 <motion.div
                   key={name}
                   title={name}
                   whileHover={{ scale: 1.2 }}
-                  className="hover:text-blue-800 transition duration-300"
+                  className="hover:text-[var(--hover-bg)] transition duration-300"
                 >
                   {icon}
                 </motion.div>

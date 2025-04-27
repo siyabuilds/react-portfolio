@@ -18,7 +18,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="w-full px-4 py-4 shadow-md bg-[var(--background)]">
+    <nav className="w-full px-4 py-4 shadow-md bg-[var(--background)] fixed">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Heading */}
         <h1 className="text-3xl font-bold text-[var(--foreground)]]">Samson</h1>

@@ -11,16 +11,20 @@ import PulseLayer from "./components/PulseLayer";
 export default function App() {
   return (
     <Router>
-      <Background />
-      <PulseLayer />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <Background />
+        <PulseLayer />
+        <Navbar />
+        <main className="flex-1 mt-10 mb-10">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
