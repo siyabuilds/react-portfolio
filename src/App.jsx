@@ -5,10 +5,14 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Background from "./components/Background";
+import PulseLayer from "./components/PulseLayer";
 
 export default function App() {
   return (
     <Router>
+      <Background />
+      <PulseLayer />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

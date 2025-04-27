@@ -46,7 +46,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 py-8 bg-gray-50 text-gray-800 flex flex-col items-center"
+      className="min-h-screen px-6 py-8  text-gray-800 flex flex-col items-center"
     >
       <motion.h2
         className="text-4xl font-extrabold text-blue-600 mb-8"
