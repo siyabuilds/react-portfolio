@@ -107,12 +107,20 @@ const ContactForm = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           className={`text-sm mt-2 ${
-            status === "success" ? "text-green-500" : "text-red-500"
+            status === "success"
+              ? "text-green-500"
+              : status === "error"
+              ? "text-red-500"
+              : "text-blue-500"
           }`}
         >
-          {status === "success"
-            ? "Message sent successfully!"
-            : "Something went wrong. Please try again."}
+          {
+            {
+              success: "Message sent successfully!",
+              error: "Something went wrong. Please try again.",
+              loading: "Sending your message...",
+            }[status]
+          }
         </motion.div>
       )}
     </motion.form>
