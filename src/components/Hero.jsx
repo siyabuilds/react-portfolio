@@ -40,7 +40,7 @@ const Hero = () => {
           className="text-[var(--primary)] text-2xl sm:text-3xl md:text-4xl"
           aria-live="polite"
         />
-        <span className="text-[var(--primary)] font-light">"]</span>.
+        <span className="text-[var(--primary)] ubuntu-mono-regular">"]</span>.
       </h1>
       <p className="text-lg text-[var(--foreground)] max-w-xl mt-2">
         I build sleek, functional apps using React, Node.js, and curiosity.
