@@ -27,12 +27,16 @@ const Projects = () => {
     }
   }, [filter]);
 
+  useEffect(() => {
+    document.title = "My Projects";
+  }, []);
+
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
   };
 
   return (
-    <section className="min-h-screen px-4 py-8 bg-[var(--background)] text-[var(--foreground)]">
+    <section className="min-h-screen px-4 py-8 text-[var(--foreground)]">
       <h2 className="text-3xl font-bold text-center mb-6">Projects</h2>
 
       {/* Filter Dropdown */}
