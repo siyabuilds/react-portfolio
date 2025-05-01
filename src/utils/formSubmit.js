@@ -1,5 +1,5 @@
 const formEndpoint =
-  "https://script.google.com/macros/s/AKfycbws8jIvjIe8slcEdG7gIDWbiyhb7iyW5CnwvbuTo8hb97BCLoGfZG_605yLSTDE8Lq20Q/exec";
+  "https://formspree.io/f/xzzpggjp";
 
 export const submitFormData = async (formData) => {
   try {
