@@ -49,6 +49,30 @@
   body {
     @apply transition-colors duration-500 ease-in-out;
   }
+
+  .ubuntu-mono-regular {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .ubuntu-mono-bold {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .ubuntu-mono-regular-italic {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .ubuntu-mono-bold-italic {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
 }
 
 @layer utilities {
@@ -74,5 +98,32 @@
 
   .animate-pulseEffect {
     animation: pulseEffect 0.5s ease-out forwards;
+  }
+
+  @keyframes rotate-border {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .profile-ring {
+    display: inline-block;
+    position: relative;
+  }
+
+  .profile-ring::before {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 9999px;
+    border-width: 6px;
+    transform-origin: center;
+    border-style: solid;
+    border-color: var(--primary) var(--hover-bg) var(--primary) var(--hover-bg);
+    z-index: 0;
+    animation: rotate-border 2s linear infinite;
   }
 }
