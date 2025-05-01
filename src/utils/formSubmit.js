@@ -12,7 +12,7 @@ export const submitFormData = async (formData) => {
     });
 
     const result = await response.json();
-    return result.status;
+    return result.ok ? "success" : "error";
   } catch (err) {
     console.error("Form submission error:", err);
     return "error";
