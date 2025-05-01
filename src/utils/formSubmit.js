@@ -3,7 +3,7 @@ const formEndpoint =
 
 export const submitFormData = async (formData) => {
   try {
-    const response = await fetch(formEndPoint, {
+    const response = await fetch(formEndpoint, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -11,9 +11,7 @@ export const submitFormData = async (formData) => {
       body: JSON.stringify(formData),
     });
 
-    const text = await response.text();
-    const result = JSON.parse(text);
-
+    const result = await response.json();
     return result.status;
   } catch (err) {
     console.error("Form submission error:", err);
