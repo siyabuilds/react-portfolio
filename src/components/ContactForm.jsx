@@ -8,7 +8,7 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
-  const [status, setStatus] = useState("idle"); 
+  const [status, setStatus] = useState("idle");
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -18,11 +18,15 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus("loading");
 
-    const result = await submitFormData(formData);
-    setStatus(result === "success" ? "success" : "error");
-
-    if (result === "success") {
-      setFormData({ name: "", email: "", message: "" });
+    try {
+      const result = await submitFormData(formData);
+      setStatus(result === "success" ? "success" : "error");
+      if (result === "success") {
+        setFormData({ name: "", email: "", message: "" });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setStatus("error");
     }
   };
 
