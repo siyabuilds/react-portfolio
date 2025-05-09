@@ -7,11 +7,13 @@ import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Background from "./components/Background";
 import PulseLayer from "./components/PulseLayer";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
+        <Analytics />
         <Background />
         <PulseLayer />
         <Navbar />
