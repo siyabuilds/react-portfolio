@@ -44,7 +44,7 @@ const socialLinks = [
     name: "Resume",
     icon: <FaFile />,
     url: "https://docs.google.com/document/d/13Bq0r7zYTmJyeprF8_fYhAAJEK0313B2XKk7OBBMi8Q/edit?tab=t.0",
-    display: "Daveyton, 1520",
+    display: "Visit Resume",
   },
 ];
 
