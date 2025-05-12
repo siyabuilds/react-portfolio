@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaWhatsapp,
   FaMapMarkerAlt,
+  FaFile,
 } from "react-icons/fa";
 
 const socialLinks = [
@@ -40,10 +41,10 @@ const socialLinks = [
     display: "Chat on WhatsApp",
   },
   {
-    name: "Location",
-    icon: <FaMapMarkerAlt />,
-    url: "https://www.google.com/search?q=Daveyton+1520",
-    display: "Daveyton, 1520",
+    name: "Resume",
+    icon: <FaFile />,
+    url: "https://docs.google.com/document/d/13Bq0r7zYTmJyeprF8_fYhAAJEK0313B2XKk7OBBMi8Q/edit?tab=t.0",
+    display: "Visit Resume",
   },
 ];
 
