@@ -21,10 +21,10 @@ function ModalHandler() {
 
   useEffect(() => {
     const count = parseInt(sessionStorage.getItem("modalClickCount")) || 0;
-    const newCount = count + 1;
-    sessionStorage.setItem("modalClickCount", newCount);
 
-    if (newCount % 15 === 0 || newCount === 1) {
+    if (count % 15 === 0 || count === 0) {
+      const newCount = count + 1;
+      sessionStorage.setItem("modalClickCount", newCount);
       Swal.fire({
         title: "Portfolio has moved!",
         text: "A new portfolio has been made available. Visit my new portfolio for the latest projects.",
