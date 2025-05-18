@@ -38,6 +38,10 @@ function ModalHandler() {
           confirmButton: "px-4 py-2 hover:bg-[var(--hover-bg)]",
         },
         showCloseButton: true,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.open("https://samsonlukhele.me", "_blank");
+        }
       });
     }
   }, [location.pathname]);
