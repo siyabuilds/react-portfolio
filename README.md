@@ -1,9 +1,9 @@
 # ✨ Personal Portfolio Showcase ✨
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub issues](https://img.shields.io/github/issues/markuptitan/react-portfolio)](https://github.com/markuptitan/react-portfolio/issues)
-[![GitHub forks](https://img.shields.io/github/forks/markuptitan/react-portfolio)](https://github.com/markuptitan/react-portfolio/network)
-[![GitHub stars](https://img.shields.io/github/stars/markuptitan/react-portfolio)](https://github.com/markuptitan/react-portfolio/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![GitHub issues](https://img.shields.io/github/issues/markuptitan/react-portfolio?style=flat-square)](https://github.com/markuptitan/react-portfolio/issues)
+[![GitHub forks](https://img.shields.io/github/forks/markuptitan/react-portfolio?style=flat-square)](https://github.com/markuptitan/react-portfolio/network)
+[![GitHub stars](https://img.shields.io/github/stars/markuptitan/react-portfolio?style=flat-square)](https://github.com/markuptitan/react-portfolio/stargazers)
 
 This project is a modern, responsive personal portfolio website built with React, Vite, and Tailwind CSS. It showcases my skills, projects, and provides a way for visitors to get in touch.
 
@@ -22,7 +22,7 @@ This project is a modern, responsive personal portfolio website built with React
 *   📝 **Contact Form:** Easy way for visitors to send messages, with status notifications.
 *   ✅ **Interactive Elements:** Engaging animations and transitions using Framer Motion (e.g., `PulseLayer`, `Hero` typing animation, `ProjectCard` hover).
 *   🔗 **Dynamic CTA Buttons:** Call-to-action buttons with randomly selected navigation links.
-*     सामाजिक **Social Links:** Prominently displayed social media connections.
+*      सामाजिक **Social Links:** Prominently displayed social media connections.
 
 ## 🛠️ Tech Stack
 
@@ -314,7 +314,9 @@ Contributions are welcome! If you have suggestions for improvements or find any 
 
 ## 📜 License
 
-Distributed under the MIT License.
+Distributed under the MIT License. See `LICENSE` file for more information.
+(Note: You might need to create a `LICENSE` file if it doesn't exist. A common MIT License text can be easily found online.)
+
 ## 🙏 Acknowledgements
 
 *   [Vite](https://vitejs.dev/)
@@ -322,4 +324,9 @@ Distributed under the MIT License.
 *   [Tailwind CSS](https://tailwindcss.com/)
 *   [Framer Motion](https://www.framer.com/motion/)
 *   Icons from [Lucide React](https://lucide.dev/) and [React Icons](https://react-icons.github.io/react-icons/)
-*   Author: Siyabonga Samson Lukhele
+*   Author: Siyabonga Samson Lukhele (from `package.json`)
+
+---
+
+_This README has been updated and refined._
+_Remember to replace placeholder URLs and verify all paths and details if deploying._
