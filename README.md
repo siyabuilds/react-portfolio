@@ -314,9 +314,7 @@ Contributions are welcome! If you have suggestions for improvements or find any 
 
 ## 📜 License
 
-Distributed under the MIT License. See `LICENSE` file for more information.
-(Note: You might need to create a `LICENSE` file if it doesn't exist. A common MIT License text can be easily found online.)
-
+Distributed under the MIT License.
 ## 🙏 Acknowledgements
 
 *   [Vite](https://vitejs.dev/)
@@ -324,9 +322,4 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 *   [Tailwind CSS](https://tailwindcss.com/)
 *   [Framer Motion](https://www.framer.com/motion/)
 *   Icons from [Lucide React](https://lucide.dev/) and [React Icons](https://react-icons.github.io/react-icons/)
-*   Author: Siyabonga Samson Lukhele (from `package.json`)
-
----
-
-_This README has been updated and refined._
-_Remember to replace placeholder URLs and verify all paths and details if deploying._
+*   Author: Siyabonga Samson Lukhele
