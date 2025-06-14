@@ -11,7 +11,7 @@ const Footer = () => {
       </span>
       <div className="flex items-center">
         <a
-          href="https://github.com/markuptitan/react-portfolio"
+          href="https://github.com/siyabuilds/react-portfolio"
           target="_blank"
           rel="noopener noreferrer"
           className="ml-2 text-[var(--foreground)] hover:text-[var(--primary)] transition-colors"

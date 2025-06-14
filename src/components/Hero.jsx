@@ -28,7 +28,7 @@ const Hero = () => {
     <section className="h-screen flex flex-col justify-center items-center text-center px-4 pb-16 text-[var(--foreground)]">
       <div className="profile-ring relative w-64 h-64 mx-auto mb-6">
         <img
-          src="https://github.com/markuptitan.png"
+          src="https://github.com/siyabuilds.png"
           alt="Samson"
           className="w-full h-full rounded-full border-2 border-[var(--primary)] relative z-10"
         />

@@ -13,8 +13,8 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: <FaGithub />,
-    url: "https://github.com/markuptitan",
-    display: "github.com/markuptitan",
+    url: "https://github.com/siyabuilds",
+    display: "github.com/siyabuilds",
   },
   {
     name: "LinkedIn",
@@ -25,8 +25,8 @@ const socialLinks = [
   {
     name: "Twitter",
     icon: <FaTwitter />,
-    url: "https://twitter.com/markuptitan",
-    display: "twitter.com/markuptitan",
+    url: "https://twitter.com/siyabuilds",
+    display: "twitter.com/siyabuilds",
   },
   {
     name: "Email",
