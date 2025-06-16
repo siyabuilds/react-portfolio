@@ -4,7 +4,7 @@ export const projects = [
     description:
       "This is my portfolio using React, Framer Motion and TailwindCSS",
     tech: ["React", "Tailwind", "Framer Motion"],
-    github: "https://github.com/markuptitan/react-portfolio",
+    github: "https://github.com/siyabuilds/react-portfolio",
     liveDemo: "https://markuptitan.site",
     image: "/images/portfolio.png",
   },
@@ -13,8 +13,8 @@ export const projects = [
     description:
       "A fully tested CLI-based banking system built with modern JavaScript (ES6).",
     tech: ["Decimal.js", "Jasmine"],
-    github: "https://github.com/markuptitan/banks_umuzi",
-    liveDemo: "https://github.com/markuptitan/banks_umuzi",
+    github: "https://github.com/siyabuilds/banking_mock",
+    liveDemo: "https://github.com/siyabuilds/banking_mock",
     image: "/images/banks.png",
   },
   {
@@ -22,7 +22,7 @@ export const projects = [
     description:
       "Secure, customizable password generator. Also has built-in password strength check.",
     tech: ["Next.js", "API Routes", "Tailwind", "ShadCN UI"],
-    github: "https://github.com/markuptitan/nextjs-password-generator",
+    github: "https://github.com/siyabuilds/nextjs-password-generator",
     liveDemo: "https://password-generator.markuptitan.site/",
     image: "/images/password-gen.png",
   },
@@ -30,7 +30,7 @@ export const projects = [
     title: "Word Unscrambler",
     description: "API-assisted tool for unscrambling English words.",
     tech: ["Next.js", "API Routes", "Tailwind"],
-    github: "https://github.com/markuptitan/word-unscrambler",
+    github: "https://github.com/siyabuilds/word-unscrambler",
     liveDemo: "https://word-unscrambler.markuptitan.site",
     image: "/images/word-unscrambler.png",
   },
