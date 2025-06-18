@@ -34,4 +34,13 @@ export const projects = [
     liveDemo: "https://word-unscrambler.markuptitan.site",
     image: "/images/word-unscrambler.png",
   },
+  {
+    title: "AI Powered Dev Blog",
+    description:
+      "A blog platform that leverages AI to generate content and assist with writing.",
+    tech: ["Astro", "OpenAI", "GitHub Actions"],
+    github: "https://github.com/siyabuilds/ai_powered_devblog",
+    liveDemo: "https://blog.samson.codes",
+    image: "/images/blog.png",
+  },
 ];
