@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: "My Portfolio - This Site",
+    title: "Next.js Portfolio",
     description:
-      "This is my portfolio using React, Framer Motion and TailwindCSS",
-    tech: ["React", "Tailwind", "Framer Motion"],
-    github: "https://github.com/siyabuilds/react-portfolio",
-    liveDemo: "https://markuptitan.site",
+      "This is my portfolio using Next.js, Framer Motion and TailwindCSS",
+    tech: ["Next.js", "Tailwind", "Framer Motion"],
+    github: "https://github.com/siyabuilds/nextjs-portfolio",
+    liveDemo: "https://siyabuilds.tech",
     image: "/images/portfolio.png",
   },
   {
