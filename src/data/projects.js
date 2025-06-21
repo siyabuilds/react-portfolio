@@ -43,4 +43,13 @@ export const projects = [
     liveDemo: "https://blog.samson.codes",
     image: "/images/blog.png",
   },
+  {
+    title: "Carbon Footprint Logger",
+    description:
+      "A simple app to log and track your daily carbon footprint and environmental impact.",
+    tech: ["Vite", "Chart.js", "MongoDB", "Express"],
+    github: "https://github.com/siyabuilds/carbon-footprint-logger",
+    liveDemo: "https://carbontrackr.vercel.app",
+    image: "/images/carbontrackr.png",
+  },
 ];
